@@ -1,4 +1,3 @@
 # htp6projects
-Begench Shamuradov projects
-
+Begench Shamuradov proje
 this is my very first commit :-)
