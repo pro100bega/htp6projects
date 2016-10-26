@@ -31,10 +31,10 @@ public class HexInFile {
 		return instance;
 	}
 	
-	// Чтение всего содержимого текстового файла
+	// Р§С‚РµРЅРёРµ РІСЃРµРіРѕ С„Р°Р№Р»Р° РІ СЃС‚СЂРѕРєСѓ
 	public String readFileToString(){
 		
-		// При первом чтение инициализирует bufferedReade
+		// РџСЂРё РїРµСЂРІРѕРј С‡С‚РµРЅРёРµ РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ bufferedReadeРє
 		if (this.bufferedReader == null){
 			try {
 				bufferedReader = new BufferedReader(new FileReader(this.fileName));
@@ -58,7 +58,7 @@ public class HexInFile {
 		return null;
 	}
 	
-	// создает коллекцию строк, совпадающих заданному регулярному выражению
+	// Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРѕР»Р»РµРєС†РёСЋ СЃС‚СЂРѕРє РїРѕ Р·Р°РґР°РЅРЅРѕРјСѓ СЂРµРіСѓР»СЏСЂРЅРѕРјСѓ РІС‹СЂР°Р¶РµРЅРёСЋ
 	public List<String> findPattern(Matcher matcher){
 		List<String> stringList = new ArrayList<>();
 		

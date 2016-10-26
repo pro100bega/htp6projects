@@ -12,7 +12,7 @@ public class Program {
 		HexInFile hexInFile = HexInFile.getInstance();
 		hexInFile.setFileName(fileName);
 		
-		// Текст, содержащийся в файле
+		// РўРµРєСЃС‚, СЃРѕРґРµСЂР¶Р°С‰РёР№СЃСЏ РІ С„Р°Р№Р»Рµ
 		String text = hexInFile.readFileToString();
 		
 		if (null != text) {
