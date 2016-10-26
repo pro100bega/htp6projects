@@ -11,9 +11,14 @@ import java.util.regex.Matcher;
 public class HexInFile {
 
 	private static final HexInFile instance = new HexInFile();
-
+	
+	private BufferedReader bufferedReader;
+	
 	private String fileName;
-
+	
+	private HexInFile() {
+	}
+	
 	public String getFileName() {
 		return fileName;
 	}
@@ -22,16 +27,14 @@ public class HexInFile {
 		this.fileName = fileName;
 	}
 
-	private HexInFile() {
-	}
-
-	private BufferedReader bufferedReader;
-
 	public static HexInFile getInstance() {
 		return instance;
 	}
-
+	
+	// „тение всего содержимого текстового файла
 	public String readFileToString(){
+		
+		// ѕри первом чтение инициализирует bufferedReade
 		if (this.bufferedReader == null){
 			try {
 				bufferedReader = new BufferedReader(new FileReader(this.fileName));
@@ -55,6 +58,7 @@ public class HexInFile {
 		return null;
 	}
 	
+	// создает коллекцию строк, совпадающих заданному регул€рному выражению
 	public List<String> findPattern(Matcher matcher){
 		List<String> stringList = new ArrayList<>();
 		
