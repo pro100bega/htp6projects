@@ -37,7 +37,7 @@ public class SimilarEmailFinder {
 			try {
 				bufferedReader = new BufferedReader(new FileReader(this.fileName));
 			} catch (FileNotFoundException e) {
-				e.printStackTrace();
+				e.printStackTrace();// эта ошибка аомментировалась в предыдущем коде
 			}
 		}
 		String text = "";
