@@ -39,17 +39,17 @@ public class HexInFile {
 			try {
 				bufferedReader = new BufferedReader(new FileReader(this.fileName));
 			} catch (FileNotFoundException e) {
-				e.printStackTrace();
+				e.printStackTrace();// произошло исключение, мы его тихо погасили
 			}	
 		}
-		String text = "";
+		String text = "";// и также тихо перешли сюда
 		String buffer;
 		try {
-			while((buffer = bufferedReader.readLine()) != null){
+			while((buffer = bufferedReader.readLine()) != null){// чтобы дальше работать с bufferedReader-ом, которого нет
 				text += buffer;
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			e.printStackTrace();// ошибка аналогична предыдущей
 		}
 		
 		if (!("".equals(text))){
