@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Hospital</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>addPatient</servlet-name>
+		<servlet-class>by.htp6.hospital.controller.AddPatientServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addPatient</servlet-name>
+		<url-pattern>/addPatientServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>readPatient</servlet-name>
+		<servlet-class>by.htp6.hospital.controller.ReadPaientServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>readPatient</servlet-name>
+		<url-pattern>/readPatient</url-pattern>
+	</servlet-mapping>
+</web-app>
