@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+// РЅРµРїР»РѕС…Рѕ)
 public class DirectoryChecker extends Thread {
 	private File directory;
 	private volatile boolean stopFlag;
@@ -80,7 +81,7 @@ public class DirectoryChecker extends Thread {
 	}
 }
 
-// Поиск добавленных файлов в директории
+// ГЏГ®ГЁГ±ГЄ Г¤Г®ГЎГ ГўГ«ГҐГ­Г­Г»Гµ ГґГ Г©Г«Г®Гў Гў Г¤ГЁГ°ГҐГЄГІГ®Г°ГЁГЁ
 // if (this.directoryState != null){
 // if (this.lastDirectoryState == null){
 // this.lastDirectoryState = new ArrayList<>();

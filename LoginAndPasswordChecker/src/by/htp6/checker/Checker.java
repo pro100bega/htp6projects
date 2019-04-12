@@ -20,6 +20,8 @@ public class Checker {
 			return true;
 		}
 		
+	// не надо в одном классе смешивать логику работу и вывод данных куда-либо
+	// логика должны возвращать значения, которые можно куда-нибудь вывести
 		//Печатает на экран сообщение о корректности и некоректности данных
 		public void printCheckResult(String fieldName, String field, boolean checkState){
 			if (!checkState){
